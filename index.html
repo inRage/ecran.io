@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quelle est ma résolution d'écran ? | Ecran.io</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="screen-resolution">
+    <h1>Quelle est ma résolution d'écran ?</h1>
+    <div class="screen-resolution--size" id="screenResolution"></div>
+    <p>Cette résolution correspond à la taille de votre écran et <br>non pas celle de votre navigateur.</p>
+</div>
+
+<div class="copyright">Made with <span>❤</span> at <a href="https://www.inrage.fr">inRage.fr</a></div>
+
+<script type="text/javascript">
+    var res = document.getElementById('screenResolution');
+    res.innerHTML = screen.width + " x " + screen.height;
+</script>
+
+</body>
+</html>
