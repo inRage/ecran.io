@@ -19,7 +19,11 @@
 
 <script type="text/javascript">
     var res = document.getElementById('screenResolution');
-    res.innerHTML = screen.width + " x " + screen.height;
+    var w = screen.width; var h = screen.height;
+    var DPR = window.devicePixelRatio;
+    w = Math.round(DPR * w);
+    h = Math.round(DPR * h);
+    res.innerHTML = w + " x " + h;
 </script>
 
 </body>
